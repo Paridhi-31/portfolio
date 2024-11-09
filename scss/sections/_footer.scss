@@ -1,0 +1,71 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+
+.footer {
+    padding-top: 1rem;
+    background-color: $footer;
+}
+
+.social-icon {
+    color: white; /* Ensure icon color is white */
+    text-decoration: none; /* Remove underline */
+    margin-right: 2rem; /* Increase space between icons */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for zoom and color */
+}
+
+.social-icon:last-child {
+    margin-right: 0; /* Remove margin from the last icon */
+}
+
+.social-icon i {
+    font-size: 1.5rem; /* Adjust the size of the icons */
+}
+
+.social-icon:hover {
+    color: $gray-700; /* Change color on hover */
+    font-weight: bold; /* Make icon bold on hover */
+    transform: scale(2); /* Zoom effect */
+}
+
+
+
+// STYLE THE COPYRIGHT  CONTENT 
+.footer-bottom {
+    background-color: $primary;
+
+    &__copyright {
+        color: $gray-600;
+        font-weight: 400;
+        
+
+        a {
+            color: $gray-300;
+            text-decoration: none;
+
+            &:hover {
+                color: $gray-700;
+                text-decoration: none;
+             
+            }
+        }
+    }
+}
+
+
+// STYLE THE BACK TO TOP BUTTON 
+.back-to-top {
+    background-color: $primary;
+    position: fixed;
+    width: 3rem;
+    height: 3rem;
+    right: 1.875rem;
+    bottom: 1.875rem;
+    z-index: 9999;
+
+    i {
+        color: $white;
+        font-size: 1rem;
+        @include absoluteCenter;
+    }
+}

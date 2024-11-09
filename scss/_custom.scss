@@ -1,0 +1,26 @@
+//THEME COLORS
+$lavender: #C5B3E5;
+$mint: #B4E1C7;
+$footer: #B4E1C7;
+$gray-700: #495057;
+
+//WHITE AND GRAY COLORS
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+
+
+$primary:       $lavender;
+$secondary:     $mint;
+
+
+// IMPORT BOOTSTRAP
+@import"../node_modules/bootstrap/scss/bootstrap";

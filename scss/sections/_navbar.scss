@@ -1,0 +1,57 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.navbar-brand {
+  display: flex;
+  align-items: center; /* Center-align logo and menu icon */
+}
+
+
+/* Logo styling for desktop and mobile screens */
+.logo {
+  height: 50px; /* Default size for desktop */
+  width: auto;
+  transition: height 0.3s ease; /* Smooth resizing */
+}
+
+/* Responsive resizing on smaller screens */
+@media (max-width: 768px) {
+  .logo {
+    height: 40px !important;
+    width: auto !important;
+    max-height: 100%; /* Ensure it’s not constrained */
+    max-width: 100%;  /* Prevents container constraints */
+  }
+}
+
+
+
+.menu {
+  background-color: $white;
+
+
+    li {
+      padding: 0 0.7rem;
+
+      a {
+        color: $black;
+        padding: 0 0.7rem;
+        text-transform: capitalize;
+        font-size: large;
+        font-weight: 600;      
+
+      }
+      &:hover {
+        color: $primary;
+      }
+  
+    }
+    
+}
+
+// Style for active link
+.nav-link.active {
+  color: $primary !important; 
+  border-bottom: 0.2rem solid $primary;
+  padding: 2px;
+}
