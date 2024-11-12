@@ -19,8 +19,6 @@
   .logo {
     height: 40px !important;
     width: auto !important;
-    max-height: 100%; /* Ensure it’s not constrained */
-    max-width: 100%;  /* Prevents container constraints */
   }
 }
 
